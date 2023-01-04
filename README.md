@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Ping coming soon page screenshot]()
+![Ping coming soon page screenshot](https://github.com/Marchino5791/Frontend-Mentor-Ping-coming-soon-page/blob/main/Screenshot%202023-01-04%2019.39.01.png)
 
 ### Links
 
