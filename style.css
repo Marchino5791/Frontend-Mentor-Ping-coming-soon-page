@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+/* +-----+-----+-----+ TEMPLATE -----+-----+-----+ */
+body {
+  width: 40%;
+  margin: 0 auto;
+  font-family: "Libre Franklin", sans-serif;
+  color: var(--very-dark-blue);
+}
+
+.text-box {
+  margin: 3rem 0;
+}
+
+.text-box__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  transform: scale(0.9);
+}
+
+.text-box__title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.text-box__title--bold {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.CTA {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1rem;
+}
+
+#email {
+  height: 3rem;
+  border-radius: 3rem;
+  border: 1px solid var(--pale-blue);
+  padding: 0 1.5rem;
+}
+
+.border-red {
+  border: 1px solid var(--light-red) !important;
+}
+
+.form__error {
+  padding: 0.5rem 1.5rem;
+  font-style: italic;
+  color: var(--light-red);
+  visibility: hidden;
+  columns: 1 / -1;
+}
+
+.show {
+  visibility: visible;
+}
+
+#btn {
+  height: 3rem;
+  border-radius: 3rem;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#btn:hover {
+  opacity: 0.8;
+}
+
+main {
+  width: 100%;
+}
+
+.image-hero {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  color: var(--gray);
+}
+
+.social {
+  margin: 2rem;
+}
+
+.social__link:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.fa-brands {
+  color: var(--blue);
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 2rem;
+}
+
+.fa-brands:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.copy {
+  font-size: 0.875rem;
+}
+
+.attribution {
+  font-size: 11px;
+  margin: 1rem 0;
+}
+
+.attribution a {
+  color: var(--blue);
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 93.75%;
+  }
+
+  body {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 80%;
+  }
+
+  .text-box__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  body {
+    width: 80%;
+  }
+
+  .text-box__title {
+    font-size: 1.75rem;
+  }
+
+  .CTA {
+    font-size: 1rem;
+  }
+
+  #form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, fr);
+    row-gap: 1rem;
+  }
+
+  .form__error {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    text-align: center;
+    display: none;
+    grid-row: 2 / 3;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #email {
+    padding: 0 2.5rem;
+  }
+}
